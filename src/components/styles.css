@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #245A95;
+  text-align: center;
+}
+
+/* Header Styles */
+.bg-gray-900 {
+  background-color: #245A95;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.w-full1{
+  background-color: #fff;
+  color:#000;
+  width: 7%;
+  padding-right: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  right: 20px;
+  position: absolute;
+}
+.w-full2{
+  background-color: #fff;
+  color:#000;
+  width: 7%;
+  padding-right: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  right: 150px;
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  height: 80px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+/* Form Styling */
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  color: #245A95;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: #245A95;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  background-color: #245A95;
+  color: #fff;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1a3d6d;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Alert Message */
+.alert {
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Link Styling */
+.text-center a {
+  text-decoration: none;
+  color: #245A95;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+  color: #1a3d6d;
+  text-decoration: underline;
+}
+
+/* Incident Dashboard Styles */
+.incident-dashboard {
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.left-section,
+.right-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Section */
+.map-container {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+#azureMap {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.map-info-box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  font-size: 14px;
+}
+
+/* File Upload */
+.file-upload {
+  border: 2px dashed #245A95;
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload:hover {
+  background-color: #e6f0ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 20px;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 60px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+}
