@@ -61,4 +61,4 @@ jobs:
           app-name: 'SharePointForm-App'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_10C99735DCE14C269C0DBA1C0F60D430 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2FA4B2341EAD4F6191D82C09630F22FF }}
